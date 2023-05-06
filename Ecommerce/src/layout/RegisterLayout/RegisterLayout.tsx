@@ -5,6 +5,7 @@ import type { MenuProps } from 'antd'
 import { Layout, Menu, theme } from 'antd'
 const { Header, Content, Sider } = Layout
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons'
+import Astra from '../../assets/icons/astra.webp'
 import { v4 as uuidv4 } from 'uuid'
 import './Layout.scss'
 import { Link } from 'react-router-dom'
@@ -238,8 +239,9 @@ const menus = menuList.map(({ label, children }, index) => {
       {children.map(({ label, to }, index) => {
         return (
           <Menu.Item title={label} key={index}>
-            <Link to={to}>
-              <span>{label}</span>
+            <Link to={to} className='flex items-center '>
+              <img src={Astra} alt='label' className='mr-[6px] h-8 w-8 rounded-[35%]' />
+              <span className='inline-block'>{label}</span>
             </Link>
           </Menu.Item>
         )
@@ -259,7 +261,7 @@ export default function RegisterLayout({ children }: Props) {
 
       <div className='mx-auto max-w-7xl px-4'>
         <Layout>
-          <Sider width={200}>
+          <Sider width={250}>
             {/* <Menu
               mode='inline'
               onClick={onClick}
