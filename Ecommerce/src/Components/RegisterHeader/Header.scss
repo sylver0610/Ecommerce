@@ -1,0 +1,30 @@
+.ant-btn-primary {
+  background-color: #1677ff !important;
+  &.ant-btn-dangerous {
+    background-color: #ff4d4f !important;
+  }
+}
+.ant-modal-content {
+  .ant-modal-footer {
+    display: none;
+  }
+  .ant-modal-close {
+    right: -20px;
+    top: -20px;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    background: white;
+    .ant-modal-close-x {
+      display: flex;
+      justify-content: center;
+      .ant-modal-close-icon {
+        font-size: 24px;
+      }
+    }
+  }
+  .ant-modal-body {
+    position: relative;
+    min-height: 222px;
+  }
+}

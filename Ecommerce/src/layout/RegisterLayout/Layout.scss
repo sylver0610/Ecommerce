@@ -1,0 +1,11 @@
+.ant-layout {
+  background: #fff;
+  .ant-layout-sider {
+    top: 1%;
+    height: 100%; // experiment with this value, try changing to 110vh
+    min-height: 100vh;
+    overflow: scroll;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
